@@ -1,0 +1,104 @@
+:root{
+    --font-color:#C0C4CC;
+    --font-blue-light:#778094;
+}
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
+    margin:0;
+    padding:0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:#16191D;
+    font-family: "Microsoft YaHei";
+}
+
+.clearFix::after{
+     content:'';
+     display: block;
+     clear: both;
+ }
+
+#wb{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#sign-wb-bg{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background-color: #0c4128;
+    left: 680px;
+}
+#font-wb{
+    position: absolute;
+    top:14vh;
+    left: 10px;
+}
+#big-font-wb{
+    color: #fff;
+    font-weight: bolder;
+}
+#big-font-wb h1{
+    font-size: 64px;
+    line-height: 64px;
+}
+#big-font-wb h2{
+    font-size: 38px;
+}
+#big-font-h1 h1,
+#big-font-h1 h3{
+    float: left;
+}
+
+#big-font-wb h3{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+#font-wb h4{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-top: 56px;
+}
+#system-wb{
+    color: var(--font-color);
+    font-size: 14px;
+    margin-top: 23px;
+}
+#lBox {
+    float: left;
+    width: 8px;
+    height: 41px;
+    background: var(--font-color);
+    margin-right: 10px;
+}
+#zBox{
+    float: left;
+    font-size: 13px;
+}
+#zBox h5{
+    margin-top: 5px;
+    font-width: normal;
+    font-size: 14px;
+}
+#sysBox{
+    margin-top: 5px;
+    font-weight: 100;
+}
+#sBox{
+    color: var(--font-blue-light);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 100;
+    margin-top: 29px;
+}
