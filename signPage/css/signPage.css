@@ -57,26 +57,16 @@ html,body{
     background-image: url("../images/2048.svg");
 }
 #big-font-wb{
-    color: #fff;
+
+
+}
+#bf-svg-font {
+    font-family: "Microsoft YaHei&quot";
     font-weight: bolder;
-}
-#big-font-wb h1{
-    font-size: 64px;
-    line-height: 64px;
-}
-#big-font-wb h2{
-    font-size: 38px;
-}
-#big-font-h1 h1,
-#big-font-h1 h3{
-    float: left;
+    width: 827px;
+    height: 191px;
 }
 
-#big-font-wb h3{
-    font-size: 24px;
-    margin-top: 40px;
-    margin-left: 10px;
-}
 #font-wb h4{
     display: block;
     font-size: 20px;
