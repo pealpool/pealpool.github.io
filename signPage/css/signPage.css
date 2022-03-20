@@ -16,6 +16,7 @@ html,body{
     height: 100%;
     background-color:#16191D;
     font-family: "Microsoft YaHei";
+    user-select:none;
 }
 
 .clearFix::after{
@@ -34,13 +35,17 @@ html,body{
     position: absolute;
     width: 400px;
     height: 100%;
-    background-color: #0c4128;
     left: 680px;
+    background: rgba(22, 25, 29, 0.01);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    overflow:hidden;
 }
 #font-wb{
     position: absolute;
-    top:14vh;
+    top:50vh;
     left: 10px;
+    transform: translate(0,-55%);
 }
 #big-font-wb{
     color: #fff;
@@ -95,10 +100,67 @@ html,body{
     margin-top: 5px;
     font-weight: 100;
 }
+#sysBox .icon-success {
+    width: 13px;
+    height: 13px;
+    margin-right: 2px;
+}
+.icon-success{
+    display: inline-block;
+    vertical-align:middle;
+    background-image: url("../images/success.svg");
+    background-repeat: no-repeat;
+}
+
+
 #sBox{
     color: var(--font-blue-light);
     font-size: 12px;
     line-height: 18px;
     font-weight: 100;
     margin-top: 29px;
+}
+#bgm-wb{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    position: absolute;
+}
+.bgm{
+    border-radius: 50%;
+    position: absolute;
+}
+#bgm-wb > .bgm.blue-c{
+    width: 1376px;
+    height:1376px;
+    left: -342px;
+    top: -724px;
+    filter: blur(337px);
+}
+#bgm-wb > .bgm.orange-c{
+    width: 912px;
+    height: 912px;
+    right:-456px;
+    top: -456px;
+    filter: blur(337px);
+}
+.blue-c{
+    background-color: rgba(103, 173, 255, 0.15);
+}
+.orange-c{
+    background-color: rgba(255, 193, 136, 0.2);
+}
+#sign-wb-bg > .bgm.blue-c{
+    width: 918px;
+    height: 918px;
+    left: -601px;
+    top: -331px;
+    filter: blur(420px);
+}
+#sign-wb-bg > .bgm.orange-c{
+    width: 977px;
+    height: 977px;
+    right: -830px;
+    bottom: -659px;
+    filter: blur(337px);
 }
