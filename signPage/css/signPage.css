@@ -174,3 +174,12 @@ html,body{
     bottom: -34vw;
     filter: blur(17.5vw);
 }
+#big-font-wb {
+    background:
+    url("../images/fg-c-blue.png") no-repeat 0px 0px / 370px 370px,
+    url("../images/w.png");
+
+    /*background-color: #fff;*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
