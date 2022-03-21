@@ -1,37 +1,40 @@
-:root{
-    --font-color:#C0C4CC;
-    --font-blue-light:#778094;
+:root {
+    --font-color: #C0C4CC;
+    --font-blue-light: #778094;
 }
-blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
-    margin:0;
-    padding:0;
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
 }
+
 address, caption, cite, code, dfn, em, strong, th, var {
     font-style: normal;
     font-weight: normal;
 }
 
-html,body{
+html, body {
     width: 100%;
     height: 100%;
-    background-color:#16191D;
+    background-color: #16191D;
     font-family: "Microsoft YaHei";
-    user-select:none;
+    user-select: none;
 }
 
-.clearFix::after{
-     content:'';
-     display: block;
-     clear: both;
- }
+.clearFix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
-#wb{
+#wb {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
-#sign-wb-bg{
+
+#sign-wb-bg {
     position: absolute;
     width: 400px;
     height: 100%;
@@ -39,46 +42,65 @@ html,body{
     background: rgba(22, 25, 29, 0.01);
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
-    overflow:hidden;
+    overflow: hidden;
 }
-#font-wb{
+
+#font-wb {
     position: absolute;
-    top:50vh;
+    top: 50vh;
     left: 10px;
-    transform: translate(0,-55%);
+    transform: translate(0, -55%);
 }
-#bgf-2048{
+
+#bgf-2048 {
     position: absolute;
     width: 1348px;
     height: 840px;
     left: -410px;
     top: 50vh;
-    transform: translate(0,-80%);
+    transform: translate(0, -80%);
     background-image: url("../images/2048.svg");
 }
-#big-font-wb{
 
-
-}
-#bf-svg-font {
-    font-family: "Microsoft YaHei&quot";
+.big-font-wb {
+    color: #fff;
     font-weight: bolder;
-    width: 827px;
-    height: 191px;
 }
 
-#font-wb h4{
+.big-font-wb h1 {
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.big-font-wb h2 {
+    font-size: 38px;
+}
+
+.big-font-h1 h1,
+.big-font-h1 h3 {
+    float: left;
+}
+
+.big-font-wb h3 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#font-wb h4 {
     display: block;
     font-size: 20px;
     font-weight: bold;
     color: var(--font-color);
     margin-top: 56px;
 }
-#system-wb{
+
+#system-wb {
     color: var(--font-color);
     font-size: 14px;
     margin-top: 23px;
 }
+
 #lBox {
     float: left;
     width: 8px;
@@ -86,90 +108,127 @@ html,body{
     background: var(--font-color);
     margin-right: 10px;
 }
-#zBox{
+
+#zBox {
     float: left;
     font-size: 13px;
 }
-#zBox h5{
+
+#zBox h5 {
     margin-top: 5px;
     font-width: normal;
     font-size: 14px;
 }
-#sysBox{
+
+#sysBox {
     margin-top: 5px;
     font-weight: 100;
 }
+
 #sysBox .icon-success {
     width: 13px;
     height: 13px;
     margin-right: 2px;
 }
-.icon-success{
+
+.icon-success {
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
     background-image: url("../images/success.svg");
     background-repeat: no-repeat;
 }
 
 
-#sBox{
+#sBox {
     color: var(--font-blue-light);
     font-size: 12px;
     line-height: 18px;
     font-weight: 100;
     margin-top: 29px;
 }
-#bgm-wb{
+
+#bgm-wb {
     width: 100%;
     height: 100%;
-    overflow:hidden;
+    overflow: hidden;
     position: absolute;
 }
-.bgm{
+
+.bgm {
     border-radius: 50%;
     position: absolute;
 }
-#bgm-wb > .bgm.blue-c{
+
+#bgm-wb > .bgm.blue-c {
     width: 71vw;
-    height:71vw;
+    height: 71vw;
     left: -17.8vw;
     top: -37.7vw;
     filter: blur(17.5vw);
 }
-#bgm-wb > .bgm.orange-c{
+
+#bgm-wb > .bgm.orange-c {
     width: 47.5vw;
     height: 47.5vw;
-    right:-23.75vw;
+    right: -23.75vw;
     top: -23.75vw;
     filter: blur(17.5vw);
 }
-.blue-c{
+
+.blue-c {
     background-color: rgba(103, 173, 255, 0.15);
 }
-.orange-c{
+
+.orange-c {
     background-color: rgba(255, 193, 136, 0.2);
 }
 
-#sign-wb-bg > .bgm.blue-c{
+#sign-wb-bg > .bgm.blue-c {
     width: 47.8vw;
     height: 47.8vw;
     left: -31.3vw;
     top: -17.2vw;
     filter: blur(21.8vw);
 }
-#sign-wb-bg > .bgm.orange-c{
+
+#sign-wb-bg > .bgm.orange-c {
     width: 50vw;
     height: 50vw;
     right: -43vw;
     bottom: -34vw;
     filter: blur(17.5vw);
 }
-#big-font-wb {
-    background:
-    url("../images/fg-c-blue.png") no-repeat 0px 0px / 370px 370px,
-    url("../images/w.png");
 
-    /*background-color: #fff;*/
+.big-font-wb.z-back {
+    background-color: #fff;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+.big-font-wb.z-front {
+    background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,
+    url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: spin 4s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes spin {
+    0% {
+        background: url("../images/fg-c-blue.png") no-repeat -1000px -20px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 1000px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: url("../images/fg-c-blue.png") no-repeat 1000px -100px / 700px 700px,
+        url("../images/fg-c-orange.png") no-repeat -1000px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    /*100%{*/
+    /*    background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,*/
+    /*    url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;*/
+    /*    -webkit-background-clip: text;*/
+    /*}*/
 }
