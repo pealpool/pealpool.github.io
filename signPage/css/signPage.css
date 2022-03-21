@@ -164,3 +164,14 @@ html,body{
     bottom: -34vw;
     filter: blur(17.5vw);
 }
+text {
+    fill: url(#pattern);
+    /*fill: url("../images/testimage.png");*/
+}
+#mask-color1{
+    background-image: url("../images/testimage.png");
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    display: block;
+}
