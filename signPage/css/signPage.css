@@ -204,31 +204,69 @@ html, body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
 .big-font-wb.z-front {
-    background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,
-    url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+    /*background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,*/
+    /*url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;*/
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: spin 4s linear infinite;
+    /*-webkit-background-clip: text;*/
+    animation: spin 10s linear infinite;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-@keyframes spin {
+/*@keyframes spin {
     0% {
-        background: url("../images/fg-c-blue.png") no-repeat -1000px -20px / 500px 500px,
-        url("../images/fg-c-orange.png") no-repeat 1000px -150px / 500px 500px;
+        background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,
+        url("../images/fg-c-blue.png") no-repeat -280px 700px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    25% {
+        background: url("../images/fg-c-blue.png") no-repeat 150px 150px / 500px 500px,
+        url("../images/fg-c-blue.png") no-repeat -880px -20px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    50% {
+        background: url("../images/fg-c-blue.png") no-repeat -280px 700px / 500px 500px,
+        url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    75% {
+        background: url("../images/fg-c-blue.png") no-repeat -880px -20px / 500px 500px,
+        url("../images/fg-c-blue.png") no-repeat 150px 150px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
         -webkit-background-clip: text;
     }
     100% {
-        background: url("../images/fg-c-blue.png") no-repeat 1000px -100px / 700px 700px,
-        url("../images/fg-c-orange.png") no-repeat -1000px -150px / 500px 500px;
+        background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,
+        url("../images/fg-c-blue.png") no-repeat -280px 700px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
         -webkit-background-clip: text;
     }
-    /*100%{*/
-    /*    background: url("../images/fg-c-blue.png") no-repeat -150px -20px / 500px 500px,*/
-    /*    url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;*/
-    /*    -webkit-background-clip: text;*/
-    /*}*/
+}*/
+@keyframes spin {
+    0% {
+        background: url("../images/fg-c-blue.png") no-repeat -700px -300px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    33% {
+        background: url("../images/fg-c-blue.png") no-repeat 300px 150px / 800px 800px,
+        url("../images/fg-c-orange.png") no-repeat 720px 300px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    66% {
+        background: url("../images/fg-c-blue.png") no-repeat -500px 700px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 500px -600px / 500px 500px;
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: url("../images/fg-c-blue.png") no-repeat -700px -100px / 500px 500px,
+        url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
+        -webkit-background-clip: text;
+    }
 }
