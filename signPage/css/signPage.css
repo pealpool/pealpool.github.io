@@ -51,7 +51,6 @@ body {
   height: 100%;
   background-color: #16191d;
   font-family: "Microsoft YaHei";
-  user-select: none;
 }
 
 .clearFix::after {
@@ -98,6 +97,7 @@ body {
 .big-font-wb {
   color: #fff;
   font-weight: bolder;
+  /*user-select: none;*/
 }
 
 .big-font-wb h1 {
@@ -304,4 +304,59 @@ body {
       url("../images/fg-c-orange.png") no-repeat 320px -150px / 500px 500px;
     -webkit-background-clip: text;
   }
+}
+
+#lgForm {
+  float: left;
+  width: 320px;
+  color:#fff;
+  margin-left: 710px;
+  margin-top: -300px;
+}
+
+#lgForm > span {
+  display: block;
+  float: right;
+  font-size: 24px;
+  margin-bottom: 21px;
+}
+#lgForm label{
+  float: left;
+  font-size: 14px;
+}
+#lgForm input[type='text'],
+#lgForm input[type='password']{
+  width: 320px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #DCDFE6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 10px;
+  margin-bottom: 12px;
+}
+#lgForm a{
+  color: #c2e6ff;
+  text-decoration: none;
+}
+#lgForm button{
+  float: right;
+  width: 155px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+#lgForm label[for="read"]{
+  float: right;
+}
+
+#lgForm input[type="checkbox"]{
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+#lgForm input{
+  vertical-align: text-bottom;
+  margin-bottom: 2px;
 }
