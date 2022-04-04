@@ -71,7 +71,8 @@ body {
     width: 400px;
     height: 100%;
     left: 680px;
-    background: rgba(22, 25, 29, 0.01);
+    background-color: rgba(22, 25, 29, 0.01);
+    background-image: url("../images/dot10.png");
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
     overflow: hidden;
@@ -208,8 +209,9 @@ body {
 }
 
 .blue-c {
-    background-color: rgba(103, 173, 255, 0.15);
+    background-color: rgba(86, 160, 247, 0.2);
 }
+
 
 .orange-c {
     background-color: rgba(255, 193, 136, 0.2);
@@ -350,6 +352,7 @@ body {
     padding: 0 10px;
     margin-bottom: 12px;
 }
+
 #lgForm input[type="text"]:focus-visible,
 #lgForm input[type="password"]:focus-visible {
     outline: #67ACFF solid 3px;
@@ -368,13 +371,15 @@ body {
     margin-top: 15px;
     border: none;
     background: linear-gradient(95.66deg, #70B2FF -1.58%, #C0BABC 79.84%, #FFC188 108.89%);
-    color:#fff;
+    color: #fff;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+
 #lgForm button:hover {
     opacity: 0.8;
 }
+
 #lgForm label[for="read"] {
     float: right;
 }
