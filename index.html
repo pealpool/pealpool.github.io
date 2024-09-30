@@ -1,165 +1,235 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pealpool's Project</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" />
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
+      }
 
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
 
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
 
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
     </style>
-
-
-</head>
-<body>
-
-<header>
-    <div class="collapse bg-dark" id="navbarHeader">
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Here are some of my presentations. But as you can see, I haven't had a chance to write something to fill it in.</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">
+                Here are some of my presentations. But as you can see, I haven't
+                had a chance to write something to fill it in.
+              </p>
             </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                     class="bi bi-terminal" viewBox="0 0 16 16">
-                    <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
-                    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
-                </svg>
-                <strong style="margin-left: 8px">Pealpool Project</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="currentColor"
+              class="bi bi-terminal"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"
+              />
+              <path
+                d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"
+              />
+            </svg>
+            <strong style="margin-left: 8px">Pealpool Project</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-
-    <section class="py-5 text-center container">
+    <main>
+      <section class="py-5 text-center container">
         <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Project Showcase</h1>
-                <p class="lead text-muted">The following is a personal index of exercises. Most are in an unfinished
-                    state.</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Good Job!</a>
-                </p>
-            </div>
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Project Showcase</h1>
+            <p class="lead text-muted">
+              The following is a personal index of exercises. Most are in an
+              unfinished state.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">Good Job!</a>
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <div class="album py-5 bg-light">
+      <div class="album py-5 bg-light">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <a href="kung-fu">
-
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"/>
-                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Kung Fu</text>
-                            </svg>
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">Here is the introduction of the project. But as you can see the
-                                information is empty.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="badge bg-secondary">unfinished</span>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="kung-fu">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" />
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                      Kung Fu
+                    </text>
+                  </svg>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Here is the introduction of the project. But as you can see
+                    the information is empty.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-secondary">unfinished</span>
+                    <small class="text-muted">9 mins</small>
+                  </div>
                 </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <a href="signPage">
-
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"/>
-                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Vtest</text>
-                            </svg>
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">Here is the introduction of the project. But as you can see the
-                                information is empty.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="badge bg-secondary">unfinished</span>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+              </div>
             </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="signPage">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" />
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Vtest</text>
+                  </svg>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Here is the introduction of the project. But as you can see
+                    the information is empty.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-secondary">unfinished</span>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="test">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" />
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">test</text>
+                  </svg>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Here is the introduction of the project. But as you can see
+                    the information is empty.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-secondary">unfinished</span>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </main>
 
-</main>
-
-<footer class="text-muted py-5">
-    <div class="container">
+    <footer class="text-muted py-5">
+      <div class="container">
         <p class="float-end mb-1">
-            <a href="#">Back to top</a>
+          <a href="#">Back to top</a>
         </p>
         <p class="mb-1">Album example is &copy; Bootstrap.</p>
-    </div>
-</footer>
-<script src="bootstrap.min.js"></script>
-</body>
+      </div>
+    </footer>
+    <script src="bootstrap.min.js"></script>
+  </body>
 </html>
