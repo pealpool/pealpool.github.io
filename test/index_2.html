@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Orientation Test</title>
+  <style>
+      #output {
+          font-size: 24px;
+          text-align: center;
+          margin-top: 50vh;
+          transform: translateY(-50%);
+      }
+  </style>
+</head>
+<body>
+<div id="output">请旋转您的设备</div>
+<script>
+  window.addEventListener('deviceorientation', function(event) {
+    const output = document.getElementById('output');
+    if (event.gamma !== null && event.beta !== null) {
+      output.textContent = `Gamma: ${event.gamma.toFixed(2)} Beta: ${event.beta.toFixed(2)}`;
+    }
+  });
+</script>
+</body>
+</html>
